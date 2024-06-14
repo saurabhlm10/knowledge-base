@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s # Set the scrape interval
+
+scrape_configs:
+  - job_name: "node_app"
+    scrape_interval: 5s # How often to scrape
+    static_configs:
+      - targets: ["localhost:3000"] # Assuming your Node.js app runs on port 3000
